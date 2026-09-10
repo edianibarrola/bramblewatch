@@ -8,10 +8,10 @@
 <div id="rotate">Turn your phone sideways to play Bramblewatch.</div>
 <script>
 const canvas=document.getElementById('game'),loading=document.getElementById('loading'),message=document.getElementById('message'),progress=document.getElementById('progress');
-const config={"dataUrl": "Build/51fa66f7b32cf0eeeb7d58bf63c8f36d.data.unityweb", "frameworkUrl": "Build/19bc1752505cc56056a73a30104a5daf.framework.js.unityweb", "codeUrl": "Build/1a545b5563a33a16bd1f155962ff1d60.wasm.unityweb", "streamingAssetsUrl": "StreamingAssets", "companyName": "LocalPrototype", "productName": "Bramblewatch", "productVersion": "0.1-beta"};
+const config={"dataUrl": "Build/b515c5128fd007e90b8793fe0dc5412a.data.unityweb", "frameworkUrl": "Build/19bc1752505cc56056a73a30104a5daf.framework.js.unityweb", "codeUrl": "Build/1c38e25cc2425e03e4936dba5dc6959c.wasm.unityweb", "streamingAssetsUrl": "StreamingAssets", "companyName": "LocalPrototype", "productName": "Bramblewatch", "productVersion": "0.1-beta"};
 config.devicePixelRatio=Math.min(window.devicePixelRatio||1,matchMedia('(pointer:coarse)').matches?1.5:2);
 config.showBanner=(text,type)=>{if(type==='error')fail(text);else console.warn(text);};
 function fail(text){loading.style.display='flex';message.textContent='The game could not start. '+String(text);progress.hidden=true;let retry=document.createElement('button');retry.textContent='Try again';retry.onclick=()=>location.reload();document.getElementById('status').appendChild(retry);}
-let script=document.createElement('script');script.src="Build/5c79b913aa87e9d5abb4e33b6e50e2ea.loader.js";script.onerror=()=>fail('Check your connection and try again.');script.onload=()=>createUnityInstance(canvas,config,p=>{progress.value=p;message.textContent='Loading Bramblewatch… '+Math.round(p*100)+'%';}).then(game=>{window.bramblewatch=game;loading.style.display='none';canvas.focus();}).catch(fail);document.body.appendChild(script);
+let script=document.createElement('script');script.src="Build/413928fe29878b51b4a80fdc9072c0ad.loader.js";script.onerror=()=>fail('Check your connection and try again.');script.onload=()=>createUnityInstance(canvas,config,p=>{progress.value=p;message.textContent='Loading Bramblewatch… '+Math.round(p*100)+'%';}).then(game=>{window.bramblewatch=game;loading.style.display='none';canvas.focus();}).catch(fail);document.body.appendChild(script);
 canvas.addEventListener('contextmenu',e=>e.preventDefault());
 </script></body></html>
