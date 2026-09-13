@@ -1,7 +1,8 @@
 {
-  "sourceCommit": "fe37a87bda10ea72b15aabe1a6db6dd834f61e74",
-  "dataBytes": 96439082,
+  "sourceCommit": "f7c069a4799da9c6fcbff1293d7eb932587f3564",
+  "testRuns": true,
+  "revision": "three-save-slots-2026-09-13",
+  "dataBytes": 96439711,
   "built": "2026-09-13",
-  "revision": "farm-pacing-2026-09-13",
-  "testRuns": true
+  "saveSlots": 3
 }
