@@ -14,4 +14,6 @@ Progress is saved locally in your browser. Each browser profile/device has a sep
 
 This repository contains the compiled browser game only, not the Unity source project. This is a beta: balance and save compatibility may change.
 
-Choose **Play / Choose Farm** for three independent save slots. Your existing farm stays in Slot 1. **Beta Test Tools** starts a temporary, unsaved run separate from all three farms.
+Three independent farm slots are available from the title screen. Test Run starts a separate, unsaved farm and does not replace these slots.
+
+Latest update: gentler forest swarm health scaling, offensive upgrade choices, Seedstorm and Pepper Breath temporary pickups, fixed field rush markers, and menu cleanup.
